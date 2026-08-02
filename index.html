@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TVBox 可用源列表</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+    color: #eee;
+    min-height: 100vh;
+    padding: 20px;
+  }
+  .container { max-width: 900px; margin: 0 auto; }
+  h1 {
+    text-align: center;
+    margin: 30px 0 10px;
+    font-size: 28px;
+    background: linear-gradient(90deg, #ff6b6b, #ffd93d, #6bcb77);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .subtitle {
+    text-align: center;
+    color: #aaa;
+    margin-bottom: 30px;
+    font-size: 14px;
+  }
+  .stats {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    margin-bottom: 24px;
+    flex-wrap: wrap;
+  }
+  .stat-card {
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 12px;
+    padding: 12px 24px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+  }
+  .stat-card .num { font-size: 24px; font-weight: bold; color: #ffd93d; }
+  .stat-card .label { font-size: 12px; color: #aaa; margin-top: 4px; }
+  .actions {
+    text-align: center;
+    margin-bottom: 24px;
+  }
+  .btn {
+    display: inline-block;
+    background: linear-gradient(90deg, #6bcb77, #4d96ff);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 24px;
+    font-size: 15px;
+    cursor: pointer;
+    margin: 0 6px;
+    transition: transform 0.2s, opacity 0.2s;
+  }
+  .btn:hover { transform: translateY(-2px); opacity: 0.9; }
+  .btn.secondary { background: rgba(255,255,255,0.15); }
+  .list {
+    list-style: none;
+    background: rgba(255,255,255,0.05);
+    border-radius: 12px;
+    padding: 16px;
+    border: 1px solid rgba(255,255,255,0.1);
+  }
+  .list li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 12px;
+    border-radius: 8px;
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+    font-size: 13px;
+    word-break: break-all;
+  }
+  .list li:last-child { border-bottom: none; }
+  .list li:hover { background: rgba(255,255,255,0.08); }
+  .badge {
+    flex-shrink: 0;
+    padding: 2px 8px;
+    border-radius: 6px;
+    font-size: 11px;
+    font-weight: bold;
+    color: #fff;
+  }
+  .badge.A { background: #6bcb77; }
+  .badge.B { background: #ffd93d; color: #333; }
+  .badge.C { background: #ff9f43; }
+  .copy-btn {
+    flex-shrink: 0;
+    background: rgba(255,255,255,0.12);
+    border: 1px solid rgba(255,255,255,0.2);
+    color: #eee;
+    border-radius: 6px;
+    padding: 3px 10px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  .copy-btn:hover { background: rgba(255,255,255,0.25); }
+  .copy-btn.copied { background: #6bcb77; color: #fff; }
+  .toast {
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%) translateY(100px);
+    background: #6bcb77;
+    color: #fff;
+    padding: 12px 28px;
+    border-radius: 30px;
+    font-size: 14px;
+    transition: transform 0.3s;
+    z-index: 999;
+  }
+  .toast.show { transform: translateX(-50%) translateY(0); }
+  .tip {
+    margin-top: 30px;
+    padding: 16px;
+    background: rgba(255,255,255,0.05);
+    border-radius: 12px;
+    font-size: 13px;
+    color: #bbb;
+    line-height: 1.8;
+  }
+  .tip code {
+    background: rgba(255,255,255,0.12);
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 12px;
+    color: #ffd93d;
+  }
+  footer {
+    text-align: center;
+    color: #666;
+    font-size: 12px;
+    margin: 30px 0 10px;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>📺 TVBox 可用源</h1>
+  <p class="subtitle">自动检测真实有效性 · 更新时间：2026-08-02</p>
+
+  <div class="stats">
+    <div class="stat-card"><div class="num" id="statAll">0</div><div class="label">全部源</div></div>
+    <div class="stat-card"><div class="num" id="statA" style="color:#6bcb77">0</div><div class="label">必有 Tab</div></div>
+    <div class="stat-card"><div class="num" id="statB" style="color:#ffd93d">0</div><div class="label">大概率 Tab</div></div>
+    <div class="stat-card"><div class="num" id="statC" style="color:#ff9f43">0</div><div class="label">Guard 聚合</div></div>
+  </div>
+
+  <div class="actions">
+    <button class="btn" onclick="copyAll()">📋 一键复制全部</button>
+    <button class="btn secondary" onclick="downloadTxt()">⬇️ 下载 txt</button>
+  </div>
+
+  <ul class="list" id="sourceList"></ul>
+
+  <div class="tip">
+    <strong>💡 使用方法：</strong><br>
+    1. 打开影视仓 / TVBox 应用 → 设置 → 配置地址<br>
+    2. 粘贴上方任意一条 <code>http(s)://</code> 开头的链接<br>
+    3. A 级 = 电影/电视剧/综艺 Tab 齐全；B 级 = 大概率齐全；C 级 = Guard 聚合源<br>
+    4. 若某条失效，点右侧「复制」换另一条即可
+  </div>
+
+  <footer>由 QwenPaw 自动检测生成 · GitHub Pages 静态页面</footer>
+</div>
+
+<div class="toast" id="toast">✅ 已复制到剪贴板</div>
+
+<script>
+// 源列表：按 Tab 能力分级
+const SOURCES = [
+  { name: "ok",        level: "A", url: "https://raw.liucn.cc/box/m.json" },
+  { name: "小盒子4K",   level: "A", url: "http://xhztv.top/4k.json" },
+  { name: "11",        level: "A", url: "https://cdn.jsdelivr.net/gh/liu673cn/box@main/m.json" },
+  { name: "荐片",       level: "A", url: "https://tv.203511.xyz/0821.json" },
+  { name: "拾光",       level: "A", url: "https://gh-proxy.com/https://raw.githubusercontent.com/xmbjm/svip/refs/heads/main/svip.json" },
+  { name: "神秘大佬",   level: "A", url: "https://g.33445500.xyz/https://raw.githubusercontent.com/qist/tvbox/refs/heads/master/jsm.json" },
+  { name: "小苹果",     level: "A", url: "https://bitbucket.org/xduo/duoapi/raw/master/xpg.json" },
+  { name: "1",         level: "A", url: "https://700sjro44343.vicp.fun/vip/vip/tv.json" },
+  { name: "cs",        level: "A", url: "http://tv.nxog.top/m/" },
+  { name: "金鹰",       level: "A", url: "http://550.3vcn.work/wdjyys.json" },
+  { name: "欧歌免费",   level: "A", url: "https://tv.nxog.top/m/111.php?ou=公众号欧歌app&mz=index&jar=index&123&b=tv" },
+  { name: "二月红",     level: "A", url: "https://700sjro44343.vicp.fun/eggp/0211/tv.json" },
+  { name: "潇洒",       level: "B", url: "https://qist.wyfc.qzz.io/xiaosa/api.json" },
+  { name: "饭太硬",     level: "B", url: "https://qist.wyfc.qzz.io/fty.json" },
+  { name: "潇洒(g334)", level: "B", url: "https://g.33445500.xyz/https://raw.githubusercontent.com/qist/tvbox/refs/heads/master/xiaosa/api.json" },
+  { name: "摸鱼儿",     level: "B", url: "https://6800.kstore.vip/fish.json" },
+  { name: "俊哥",       level: "B", url: "http://home.jundie.top:81/top98.json" },
+  { name: "fmys",      level: "B", url: "http://fmys.top/fmys.json" },
+  { name: "软件",       level: "B", url: "http://47.96.82.41:5188/api.json" },
+  { name: "xn6",       level: "B", url: "http://xn--6orr3pi6g9uu.top/" },
+  { name: "宝盒",       level: "B", url: "http://宝盒接口.top" },
+  { name: "my",        level: "B", url: "http://124.223.214.31:8/api.json" },
+  { name: "王二小",     level: "C", url: "https://9280.kstore.vip/newwex.json" }
+];
+
+const LEVEL_TEXT = { A: "必有Tab", B: "大概率", C: "Guard" };
+
+function render() {
+  const list = document.getElementById("sourceList");
+  list.innerHTML = "";
+  SOURCES.forEach((s, i) => {
+    const li = document.createElement("li");
+    const badge = document.createElement("span");
+    badge.className = "badge " + s.level;
+    badge.textContent = s.level + " " + LEVEL_TEXT[s.level];
+    const span = document.createElement("span");
+    span.style.flex = "1";
+    span.textContent = s.url;
+    const copy = document.createElement("button");
+    copy.className = "copy-btn";
+    copy.textContent = "复制";
+    copy.onclick = () => copyText(s.url, copy);
+    li.appendChild(badge);
+    li.appendChild(span);
+    li.appendChild(copy);
+    list.appendChild(li);
+  });
+  document.getElementById("statAll").textContent = SOURCES.length;
+  document.getElementById("statA").textContent = SOURCES.filter(s => s.level === "A").length;
+  document.getElementById("statB").textContent = SOURCES.filter(s => s.level === "B").length;
+  document.getElementById("statC").textContent = SOURCES.filter(s => s.level === "C").length;
+}
+
+function copyText(text, btn) {
+  navigator.clipboard.writeText(text).then(() => {
+    const old = btn.textContent;
+    btn.textContent = "✅";
+    btn.classList.add("copied");
+    setTimeout(() => { btn.textContent = old; btn.classList.remove("copied"); }, 1500);
+  }).catch(() => {
+    // 剪贴板 API 失败时降级
+    const ta = document.createElement("textarea");
+    ta.value = text;
+    document.body.appendChild(ta);
+    ta.select();
+    document.execCommand("copy");
+    document.body.removeChild(ta);
+    showToast();
+  });
+}
+
+function copyAll() {
+  const all = SOURCES.map(s => s.url).join("\n");
+  copyText(all, null);
+  showToast();
+}
+
+function downloadTxt() {
+  const all = SOURCES.map(s => s.url).join("\n");
+  const blob = new Blob([all], { type: "text/plain" });
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(blob);
+  a.download = "tvbox_sources.txt";
+  a.click();
+  URL.revokeObjectURL(a.href);
+}
+
+function showToast() {
+  const t = document.getElementById("toast");
+  t.classList.add("show");
+  setTimeout(() => t.classList.remove("show"), 2000);
+}
+
+render();
+</script>
+</body>
+</html>
