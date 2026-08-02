@@ -202,11 +202,10 @@ async function loadSources() {
     SOURCES = SOURCES.map(u => ({ name: u, level: 'B', url: u }));
   } catch (e) {
     // 降级：内置静态列表（与初次发布一致）
-    SOURCES = FALLBACK_SOURCES;
+    SOURCES = FALLBACK_SOURCES.map(u => ({ name: u, level: 'B', url: u }));
   }
   render();
 }
-</script>
 
 function render() {
   const list = document.getElementById("sourceList");
