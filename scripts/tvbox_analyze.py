@@ -537,6 +537,15 @@ def main():
         for r in fail_list:
             f.write(f"| {r['name']} | {r['avg']:.3f}s | {r['http']} | {r['detail']} | `{r['url']}` |\n")
 
+    # sources.json —— 网页用：名称 + URL + tab级别
+    level_map = {'A-必有tab': 'A', 'B-大概率tab': 'B', 'C-存疑': 'C', 'D-无tab': 'D', '?': 'B'}
+    with open(os.path.join(args.outdir, 'sources.json'), 'w', encoding='utf-8') as f:
+        items = []
+        for r in ok_list:
+            level, _ = tab_info.get(r['url'], ('?', '-'))
+            items.append({'name': r['name'], 'url': r['url'], 'level': level_map.get(level, 'B')})
+        json.dump(items, f, ensure_ascii=False, indent=2)
+
     # stdout —— 最终交付摘要
     print("=" * 100)
     print(f"✅ 真实有效 TVBox 接口 {len(ok_list)} 个")

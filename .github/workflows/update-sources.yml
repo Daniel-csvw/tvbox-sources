@@ -35,10 +35,16 @@ jobs:
           import json, time
           with open('sources.txt') as f:
               urls = [u.strip() for u in f if u.strip().startswith('http')]
+          try:
+              with open('sources.json') as f:
+                  items = json.load(f)
+              valid = len(items)
+          except Exception:
+              valid = len(urls)
           status = {
               'updated_at': time.strftime('%Y-%m-%d %H:%M', time.gmtime(time.time() + 8*3600)),
-              'total': len(urls),
-              'valid': len(urls),
+              'total': valid,
+              'valid': valid,
               'invalid': 0
           }
           with open('status.json', 'w') as f:
@@ -50,7 +56,7 @@ jobs:
         run: |
           git config user.name "QwenPaw Bot"
           git config user.email "qwenpaw@users.noreply.github.com"
-          git add sources.txt status.json urls.md report.md
+          git add sources.txt status.json urls.md report.md sources.json
           if git diff --cached --quiet; then
             echo "无变化，跳过提交"
           else

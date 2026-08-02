@@ -177,7 +177,7 @@
 <div class="toast" id="toast">✅ 已复制到剪贴板</div>
 
 <script>
-// 源列表动态从 sources.txt 加载（由 GitHub Actions 每日自动更新）
+// 源列表动态加载：优先 sources.json（名称+级别），失败回退 sources.txt（纯URL）
 let SOURCES = [];
 const LEVEL_TEXT = { A: "必有Tab", B: "大概率", C: "Guard" };
 
@@ -194,15 +194,32 @@ async function loadSources() {
   } catch (e) {}
 
   try {
+    // 优先 sources.json（含线路名称 + 分级）
+    const jsonRes = await fetch('sources.json', { cache: 'no-store' });
+    if (jsonRes.ok) {
+      const items = await jsonRes.json();
+      if (Array.isArray(items) && items.length > 0) {
+        SOURCES = items.map(it => ({
+          name: it.name || '',
+          level: it.level || 'B',
+          url: it.url
+        }));
+        render();
+        return;
+      }
+    }
+  } catch (e) {}
+
+  try {
+    // 回退：sources.txt 纯 URL 列表
     const res = await fetch('sources.txt', { cache: 'no-store' });
     if (!res.ok) throw new Error('sources.txt 加载失败');
     const text = await res.text();
     SOURCES = text.split('\n').map(u => u.trim()).filter(u => u.startsWith('http'));
-    // 默认全部按 B 级展示（自动更新流程暂不输出分级）
-    SOURCES = SOURCES.map(u => ({ name: u, level: 'B', url: u }));
+    SOURCES = SOURCES.map(u => ({ name: '', level: 'B', url: u }));
   } catch (e) {
     // 降级：内置静态列表（与初次发布一致）
-    SOURCES = FALLBACK_SOURCES.map(u => ({ name: u, level: 'B', url: u }));
+    SOURCES = FALLBACK_SOURCES;
   }
   render();
 }
@@ -217,7 +234,22 @@ function render() {
     badge.textContent = s.level + " " + LEVEL_TEXT[s.level];
     const span = document.createElement("span");
     span.style.flex = "1";
-    span.textContent = s.url;
+    // 名称 + URL（有名称时显示「名称 + 换行 URL」）
+    if (s.name) {
+      const nameDiv = document.createElement("div");
+      nameDiv.style.fontWeight = "bold";
+      nameDiv.style.fontSize = "13px";
+      nameDiv.style.marginBottom = "2px";
+      nameDiv.textContent = s.name;
+      const urlDiv = document.createElement("div");
+      urlDiv.style.fontSize = "12px";
+      urlDiv.style.color = "#ccc";
+      urlDiv.textContent = s.url;
+      span.appendChild(nameDiv);
+      span.appendChild(urlDiv);
+    } else {
+      span.textContent = s.url;
+    }
     const copy = document.createElement("button");
     copy.className = "copy-btn";
     copy.textContent = "复制";
