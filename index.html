@@ -147,7 +147,7 @@
 <body>
 <div class="container">
   <h1>📺 TVBox 可用源</h1>
-  <p class="subtitle">自动检测真实有效性 · 更新时间：2026-08-02</p>
+  <p class="subtitle">自动检测真实有效性 · <span id="updateTime">更新时间：2026-08-02</span></p>
 
   <div class="stats">
     <div class="stat-card"><div class="num" id="statAll">0</div><div class="label">全部源</div></div>
@@ -177,34 +177,36 @@
 <div class="toast" id="toast">✅ 已复制到剪贴板</div>
 
 <script>
-// 源列表：按 Tab 能力分级
-const SOURCES = [
-  { name: "ok",        level: "A", url: "https://raw.liucn.cc/box/m.json" },
-  { name: "小盒子4K",   level: "A", url: "http://xhztv.top/4k.json" },
-  { name: "11",        level: "A", url: "https://cdn.jsdelivr.net/gh/liu673cn/box@main/m.json" },
-  { name: "荐片",       level: "A", url: "https://tv.203511.xyz/0821.json" },
-  { name: "拾光",       level: "A", url: "https://gh-proxy.com/https://raw.githubusercontent.com/xmbjm/svip/refs/heads/main/svip.json" },
-  { name: "神秘大佬",   level: "A", url: "https://g.33445500.xyz/https://raw.githubusercontent.com/qist/tvbox/refs/heads/master/jsm.json" },
-  { name: "小苹果",     level: "A", url: "https://bitbucket.org/xduo/duoapi/raw/master/xpg.json" },
-  { name: "1",         level: "A", url: "https://700sjro44343.vicp.fun/vip/vip/tv.json" },
-  { name: "cs",        level: "A", url: "http://tv.nxog.top/m/" },
-  { name: "金鹰",       level: "A", url: "http://550.3vcn.work/wdjyys.json" },
-  { name: "欧歌免费",   level: "A", url: "https://tv.nxog.top/m/111.php?ou=公众号欧歌app&mz=index&jar=index&123&b=tv" },
-  { name: "二月红",     level: "A", url: "https://700sjro44343.vicp.fun/eggp/0211/tv.json" },
-  { name: "潇洒",       level: "B", url: "https://qist.wyfc.qzz.io/xiaosa/api.json" },
-  { name: "饭太硬",     level: "B", url: "https://qist.wyfc.qzz.io/fty.json" },
-  { name: "潇洒(g334)", level: "B", url: "https://g.33445500.xyz/https://raw.githubusercontent.com/qist/tvbox/refs/heads/master/xiaosa/api.json" },
-  { name: "摸鱼儿",     level: "B", url: "https://6800.kstore.vip/fish.json" },
-  { name: "俊哥",       level: "B", url: "http://home.jundie.top:81/top98.json" },
-  { name: "fmys",      level: "B", url: "http://fmys.top/fmys.json" },
-  { name: "软件",       level: "B", url: "http://47.96.82.41:5188/api.json" },
-  { name: "xn6",       level: "B", url: "http://xn--6orr3pi6g9uu.top/" },
-  { name: "宝盒",       level: "B", url: "http://宝盒接口.top" },
-  { name: "my",        level: "B", url: "http://124.223.214.31:8/api.json" },
-  { name: "王二小",     level: "C", url: "https://9280.kstore.vip/newwex.json" }
-];
-
+// 源列表动态从 sources.txt 加载（由 GitHub Actions 每日自动更新）
+let SOURCES = [];
 const LEVEL_TEXT = { A: "必有Tab", B: "大概率", C: "Guard" };
+
+async function loadSources() {
+  try {
+    // 优先读 status.json 显示更新时间
+    const statusRes = await fetch('status.json', { cache: 'no-store' });
+    if (statusRes.ok) {
+      const st = await statusRes.json();
+      if (st.updated_at) {
+        document.getElementById('updateTime').textContent = '更新时间：' + st.updated_at;
+      }
+    }
+  } catch (e) {}
+
+  try {
+    const res = await fetch('sources.txt', { cache: 'no-store' });
+    if (!res.ok) throw new Error('sources.txt 加载失败');
+    const text = await res.text();
+    SOURCES = text.split('\n').map(u => u.trim()).filter(u => u.startsWith('http'));
+    // 默认全部按 B 级展示（自动更新流程暂不输出分级）
+    SOURCES = SOURCES.map(u => ({ name: u, level: 'B', url: u }));
+  } catch (e) {
+    // 降级：内置静态列表（与初次发布一致）
+    SOURCES = FALLBACK_SOURCES;
+  }
+  render();
+}
+</script>
 
 function render() {
   const list = document.getElementById("sourceList");
@@ -272,7 +274,34 @@ function showToast() {
   setTimeout(() => t.classList.remove("show"), 2000);
 }
 
-render();
+// 降级内置列表（动态加载失败时使用，与 sources.txt 一致）
+const FALLBACK_SOURCES = [
+  "https://raw.liucn.cc/box/m.json",
+  "http://xhztv.top/4k.json",
+  "https://cdn.jsdelivr.net/gh/liu673cn/box@main/m.json",
+  "https://tv.203511.xyz/0821.json",
+  "https://gh-proxy.com/https://raw.githubusercontent.com/xmbjm/svip/refs/heads/main/svip.json",
+  "https://g.33445500.xyz/https://raw.githubusercontent.com/qist/tvbox/refs/heads/master/jsm.json",
+  "https://bitbucket.org/xduo/duoapi/raw/master/xpg.json",
+  "https://700sjro44343.vicp.fun/vip/vip/tv.json",
+  "http://tv.nxog.top/m/",
+  "http://550.3vcn.work/wdjyys.json",
+  "https://tv.nxog.top/m/111.php?ou=公众号欧歌app&mz=index&jar=index&123&b=tv",
+  "https://700sjro44343.vicp.fun/eggp/0211/tv.json",
+  "https://qist.wyfc.qzz.io/xiaosa/api.json",
+  "https://qist.wyfc.qzz.io/fty.json",
+  "https://g.33445500.xyz/https://raw.githubusercontent.com/qist/tvbox/refs/heads/master/xiaosa/api.json",
+  "https://6800.kstore.vip/fish.json",
+  "http://home.jundie.top:81/top98.json",
+  "http://fmys.top/fmys.json",
+  "http://47.96.82.41:5188/api.json",
+  "http://xn--6orr3pi6g9uu.top/",
+  "http://宝盒接口.top",
+  "http://124.223.214.31:8/api.json",
+  "https://9280.kstore.vip/newwex.json"
+];
+
+loadSources();
 </script>
 </body>
 </html>
