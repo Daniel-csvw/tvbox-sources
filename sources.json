@@ -10,18 +10,18 @@
     "level": "A"
   },
   {
+    "name": "神秘大佬",
+    "url": "https://g.33445500.xyz/https://raw.githubusercontent.com/qist/tvbox/refs/heads/master/jsm.json",
+    "level": "A"
+  },
+  {
     "name": "小苹果线路",
     "url": "https://bitbucket.org/xduo/duoapi/raw/master/xpg.json",
     "level": "A"
   },
   {
-    "name": "ok",
-    "url": "https://raw.liucn.cc/box/m.json",
-    "level": "A"
-  },
-  {
-    "name": "神秘大佬",
-    "url": "https://g.33445500.xyz/https://raw.githubusercontent.com/qist/tvbox/refs/heads/master/jsm.json",
+    "name": "小盒子4K",
+    "url": "http://xhztv.top/4k.json",
     "level": "A"
   },
   {
@@ -30,8 +30,8 @@
     "level": "A"
   },
   {
-    "name": "小盒子4K",
-    "url": "http://xhztv.top/4k.json",
+    "name": "ok",
+    "url": "https://raw.liucn.cc/box/m.json",
     "level": "A"
   },
   {
@@ -55,13 +55,13 @@
     "level": "A"
   },
   {
-    "name": "影视仓/备用接口[配置即用]",
-    "url": "https://700sjro44343.vicp.fun/vip/vip/tv.json",
+    "name": "二月红接口",
+    "url": "https://700sjro44343.vicp.fun/eggp/0211/tv.json",
     "level": "A"
   },
   {
-    "name": "二月红接口",
-    "url": "https://700sjro44343.vicp.fun/eggp/0211/tv.json",
+    "name": "影视仓/备用接口[配置即用]",
+    "url": "https://700sjro44343.vicp.fun/vip/vip/tv.json",
     "level": "A"
   },
   {
@@ -70,13 +70,13 @@
     "level": "B"
   },
   {
-    "name": "饭太硬",
-    "url": "https://qist.wyfc.qzz.io/fty.json",
+    "name": "潇洒",
+    "url": "https://g.33445500.xyz/https://raw.githubusercontent.com/qist/tvbox/refs/heads/master/xiaosa/api.json",
     "level": "B"
   },
   {
-    "name": "潇洒",
-    "url": "https://g.33445500.xyz/https://raw.githubusercontent.com/qist/tvbox/refs/heads/master/xiaosa/api.json",
+    "name": "饭太硬",
+    "url": "https://qist.wyfc.qzz.io/fty.json",
     "level": "B"
   },
   {
@@ -100,11 +100,6 @@
     "level": "B"
   },
   {
-    "name": "my interface",
-    "url": "http://124.223.214.31:8/api.json",
-    "level": "B"
-  },
-  {
     "name": "xn--6orr3pi6g9uu",
     "url": "http://xn--6orr3pi6g9uu.top/",
     "level": "B"
@@ -112,6 +107,11 @@
   {
     "name": "宝盒接口",
     "url": "http://宝盒接口.top",
+    "level": "B"
+  },
+  {
+    "name": "my interface",
+    "url": "http://124.223.214.31:8/api.json",
     "level": "B"
   },
   {
