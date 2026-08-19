@@ -1,17 +1,7 @@
 [
   {
-    "name": "11",
-    "url": "https://cdn.jsdelivr.net/gh/liu673cn/box@main/m.json",
-    "level": "A"
-  },
-  {
-    "name": "小盒子4K",
-    "url": "http://xhztv.top/4k.json",
-    "level": "A"
-  },
-  {
-    "name": "拾光",
-    "url": "https://gh-proxy.com/https://raw.githubusercontent.com/xmbjm/svip/refs/heads/main/svip.json",
+    "name": "荐片",
+    "url": "https://tv.203511.xyz/0821.json",
     "level": "A"
   },
   {
@@ -20,23 +10,33 @@
     "level": "A"
   },
   {
+    "name": "拾光",
+    "url": "https://gh-proxy.com/https://raw.githubusercontent.com/xmbjm/svip/refs/heads/main/svip.json",
+    "level": "A"
+  },
+  {
+    "name": "11",
+    "url": "https://cdn.jsdelivr.net/gh/liu673cn/box@main/m.json",
+    "level": "A"
+  },
+  {
     "name": "ok",
     "url": "https://raw.liucn.cc/box/m.json",
     "level": "A"
   },
   {
-    "name": "小苹果线路",
-    "url": "https://bitbucket.org/xduo/duoapi/raw/master/xpg.json",
-    "level": "A"
-  },
-  {
-    "name": "荐片",
-    "url": "https://tv.203511.xyz/0821.json",
+    "name": "小盒子4K",
+    "url": "http://xhztv.top/4k.json",
     "level": "A"
   },
   {
     "name": "我的团长我的团",
     "url": "https://moovie.c2v2.com/api/tvbox.json",
+    "level": "A"
+  },
+  {
+    "name": "小苹果线路",
+    "url": "https://bitbucket.org/xduo/duoapi/raw/master/xpg.json",
     "level": "A"
   },
   {
@@ -55,13 +55,13 @@
     "level": "B"
   },
   {
-    "name": "饭太硬",
-    "url": "https://qist.wyfc.qzz.io/fty.json",
+    "name": "潇洒",
+    "url": "https://g.33445500.xyz/https://raw.githubusercontent.com/qist/tvbox/refs/heads/master/xiaosa/api.json",
     "level": "B"
   },
   {
-    "name": "摸鱼儿",
-    "url": "https://6800.kstore.vip/fish.json",
+    "name": "饭太硬",
+    "url": "https://qist.wyfc.qzz.io/fty.json",
     "level": "B"
   },
   {
@@ -70,13 +70,28 @@
     "level": "B"
   },
   {
-    "name": "欧歌备用接口",
-    "url": "https://xn--sdds-rp5imh.v.nxog.top?mm=25f&ou=%E8%A3%85%F0%9F%85%B1",
+    "name": "摸鱼儿",
+    "url": "https://6800.kstore.vip/fish.json",
     "level": "B"
   },
   {
     "name": "软件",
     "url": "http://47.96.82.41:5188/api.json",
+    "level": "B"
+  },
+  {
+    "name": "天天",
+    "url": "http://tv.nxog.top/",
+    "level": "B"
+  },
+  {
+    "name": "欧歌备用接口",
+    "url": "https://xn--sdds-rp5imh.v.nxog.top?mm=25f&ou=%E8%A3%85%F0%9F%85%B1",
+    "level": "B"
+  },
+  {
+    "name": "cs",
+    "url": "http://tv.nxog.top/m/",
     "level": "B"
   },
   {
@@ -100,8 +115,8 @@
     "level": "B"
   },
   {
-    "name": "cs",
-    "url": "http://tv.nxog.top/m/",
+    "name": "1",
+    "url": "https://700sjro44343.vicp.fun/vip/vip/tv.json",
     "level": "B"
   },
   {
@@ -110,23 +125,13 @@
     "level": "B"
   },
   {
-    "name": "1",
-    "url": "https://700sjro44343.vicp.fun/vip/vip/tv.json",
-    "level": "B"
-  },
-  {
-    "name": "天天",
-    "url": "http://tv.nxog.top/",
-    "level": "B"
-  },
-  {
-    "name": "潇洒",
-    "url": "https://g.33445500.xyz/https://raw.githubusercontent.com/qist/tvbox/refs/heads/master/xiaosa/api.json",
-    "level": "B"
-  },
-  {
     "name": "Kevin-IPTV",
     "url": "https://iptv-kevin.pages.dev/tvbox/tvbox.json",
+    "level": "C"
+  },
+  {
+    "name": "牛二",
+    "url": "https://9280.kstore.space/newwex.json",
     "level": "C"
   },
   {
@@ -137,11 +142,6 @@
   {
     "name": "王二小",
     "url": "https://9280.kstore.vip/newwex.json",
-    "level": "C"
-  },
-  {
-    "name": "牛二",
-    "url": "https://9280.kstore.space/newwex.json",
     "level": "C"
   },
   {
