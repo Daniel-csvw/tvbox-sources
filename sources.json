@@ -1,7 +1,7 @@
 [
   {
-    "name": "ok",
-    "url": "https://raw.liucn.cc/box/m.json",
+    "name": "11",
+    "url": "https://cdn.jsdelivr.net/gh/liu673cn/box@main/m.json",
     "level": "A"
   },
   {
@@ -10,23 +10,8 @@
     "level": "A"
   },
   {
-    "name": "神秘大佬",
-    "url": "https://g.33445500.xyz/https://raw.githubusercontent.com/qist/tvbox/refs/heads/master/jsm.json",
-    "level": "A"
-  },
-  {
-    "name": "拾光",
-    "url": "https://gh-proxy.com/https://raw.githubusercontent.com/xmbjm/svip/refs/heads/main/svip.json",
-    "level": "A"
-  },
-  {
-    "name": "11",
-    "url": "https://cdn.jsdelivr.net/gh/liu673cn/box@main/m.json",
-    "level": "A"
-  },
-  {
-    "name": "小盒子4K",
-    "url": "http://xhztv.top/4k.json",
+    "name": "ok",
+    "url": "https://raw.liucn.cc/box/m.json",
     "level": "A"
   },
   {
@@ -35,18 +20,23 @@
     "level": "A"
   },
   {
-    "name": "我的团长我的团",
-    "url": "https://moovie.c2v2.com/api/tvbox.json",
+    "name": "神秘大佬",
+    "url": "https://g.33445500.xyz/https://raw.githubusercontent.com/qist/tvbox/refs/heads/master/jsm.json",
+    "level": "A"
+  },
+  {
+    "name": "小盒子4K",
+    "url": "http://xhztv.top/4k.json",
+    "level": "A"
+  },
+  {
+    "name": "拾光",
+    "url": "https://gh-proxy.com/https://raw.githubusercontent.com/xmbjm/svip/refs/heads/main/svip.json",
     "level": "A"
   },
   {
     "name": "金鹰",
     "url": "http://550.3vcn.work/wdjyys.json",
-    "level": "A"
-  },
-  {
-    "name": "欧歌免费",
-    "url": "https://tv.nxog.top/m/111.php?ou=公众号欧歌app&mz=index&jar=index&123&b=tv",
     "level": "A"
   },
   {
@@ -85,11 +75,6 @@
     "level": "B"
   },
   {
-    "name": "俊哥接口",
-    "url": "http://home.jundie.top:81/top98.json",
-    "level": "B"
-  },
-  {
     "name": "cs",
     "url": "http://tv.nxog.top/m/",
     "level": "B"
@@ -100,8 +85,8 @@
     "level": "B"
   },
   {
-    "name": "1",
-    "url": "https://700sjro44343.vicp.fun/vip/vip/tv.json",
+    "name": "天天",
+    "url": "http://tv.nxog.top/",
     "level": "B"
   },
   {
@@ -110,18 +95,28 @@
     "level": "B"
   },
   {
+    "name": "xn--6orr3pi6g9uu",
+    "url": "http://xn--6orr3pi6g9uu.top/",
+    "level": "B"
+  },
+  {
     "name": "二月红接口",
     "url": "https://700sjro44343.vicp.fun/eggp/0211/tv.json",
     "level": "B"
   },
   {
-    "name": "天天",
-    "url": "http://tv.nxog.top/",
+    "name": "1",
+    "url": "https://700sjro44343.vicp.fun/vip/vip/tv.json",
     "level": "B"
   },
   {
-    "name": "xn--6orr3pi6g9uu",
-    "url": "http://xn--6orr3pi6g9uu.top/",
+    "name": "欧歌免费",
+    "url": "https://tv.nxog.top/m/111.php?ou=公众号欧歌app&mz=index&jar=index&123&b=tv",
+    "level": "B"
+  },
+  {
+    "name": "俊哥接口",
+    "url": "http://home.jundie.top:81/top98.json",
     "level": "B"
   },
   {
@@ -130,13 +125,13 @@
     "level": "C"
   },
   {
-    "name": "牛儿",
-    "url": "https://9280.kstore.space/wex.json",
+    "name": "王二小",
+    "url": "https://9280.kstore.vip/newwex.json",
     "level": "C"
   },
   {
-    "name": "王二小",
-    "url": "https://9280.kstore.vip/newwex.json",
+    "name": "牛儿",
+    "url": "https://9280.kstore.space/wex.json",
     "level": "C"
   },
   {
