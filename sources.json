@@ -1,7 +1,7 @@
 [
   {
-    "name": "11",
-    "url": "https://cdn.jsdelivr.net/gh/liu673cn/box@main/m.json",
+    "name": "小盒子4K",
+    "url": "http://xhztv.top/4k.json",
     "level": "A"
   },
   {
@@ -10,13 +10,13 @@
     "level": "A"
   },
   {
-    "name": "ok",
-    "url": "https://raw.liucn.cc/box/m.json",
+    "name": "拾光",
+    "url": "https://gh-proxy.com/https://raw.githubusercontent.com/xmbjm/svip/refs/heads/main/svip.json",
     "level": "A"
   },
   {
-    "name": "拾光",
-    "url": "https://gh-proxy.com/https://raw.githubusercontent.com/xmbjm/svip/refs/heads/main/svip.json",
+    "name": "ok",
+    "url": "https://raw.liucn.cc/box/m.json",
     "level": "A"
   },
   {
@@ -25,8 +25,8 @@
     "level": "A"
   },
   {
-    "name": "小盒子4K",
-    "url": "http://xhztv.top/4k.json",
+    "name": "11",
+    "url": "https://cdn.jsdelivr.net/gh/liu673cn/box@main/m.json",
     "level": "A"
   },
   {
@@ -45,23 +45,13 @@
     "level": "B"
   },
   {
-    "name": "饭太硬",
-    "url": "https://qist.wyfc.qzz.io/fty.json",
-    "level": "B"
-  },
-  {
     "name": "潇洒",
     "url": "https://g.33445500.xyz/https://raw.githubusercontent.com/qist/tvbox/refs/heads/master/xiaosa/api.json",
     "level": "B"
   },
   {
-    "name": "https://8815.kstore.vip/tvbox/wmz",
-    "url": "https://8815.kstore.vip/tvbox/wmz",
-    "level": "B"
-  },
-  {
-    "name": "摸鱼儿",
-    "url": "https://6800.kstore.vip/fish.json",
+    "name": "饭太硬",
+    "url": "https://qist.wyfc.qzz.io/fty.json",
     "level": "B"
   },
   {
@@ -75,8 +65,8 @@
     "level": "B"
   },
   {
-    "name": "fmys",
-    "url": "http://fmys.top/fmys.json",
+    "name": "https://8815.kstore.vip/tvbox/wmz",
+    "url": "https://8815.kstore.vip/tvbox/wmz",
     "level": "B"
   },
   {
@@ -85,8 +75,23 @@
     "level": "B"
   },
   {
+    "name": "摸鱼儿",
+    "url": "https://6800.kstore.vip/fish.json",
+    "level": "B"
+  },
+  {
     "name": "俊哥接口",
     "url": "http://home.jundie.top:81/top98.json",
+    "level": "B"
+  },
+  {
+    "name": "fmys",
+    "url": "http://fmys.top/fmys.json",
+    "level": "B"
+  },
+  {
+    "name": "天天",
+    "url": "http://tv.nxog.top/",
     "level": "B"
   },
   {
@@ -95,13 +100,8 @@
     "level": "B"
   },
   {
-    "name": "1",
-    "url": "https://700sjro44343.vicp.fun/vip/vip/tv.json",
-    "level": "B"
-  },
-  {
-    "name": "天天",
-    "url": "http://tv.nxog.top/",
+    "name": "二月红接口",
+    "url": "https://700sjro44343.vicp.fun/eggp/0211/tv.json",
     "level": "B"
   },
   {
@@ -115,8 +115,8 @@
     "level": "B"
   },
   {
-    "name": "二月红接口",
-    "url": "https://700sjro44343.vicp.fun/eggp/0211/tv.json",
+    "name": "1",
+    "url": "https://700sjro44343.vicp.fun/vip/vip/tv.json",
     "level": "B"
   },
   {
@@ -125,8 +125,8 @@
     "level": "C"
   },
   {
-    "name": "牛儿",
-    "url": "https://9280.kstore.space/wex.json",
+    "name": "王二小",
+    "url": "https://9280.kstore.vip/newwex.json",
     "level": "C"
   },
   {
@@ -135,8 +135,8 @@
     "level": "C"
   },
   {
-    "name": "王二小",
-    "url": "https://9280.kstore.vip/newwex.json",
+    "name": "牛儿",
+    "url": "https://9280.kstore.space/wex.json",
     "level": "C"
   },
   {
