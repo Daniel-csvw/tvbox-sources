@@ -1,17 +1,7 @@
 [
   {
-    "name": "神秘大佬",
-    "url": "https://g.33445500.xyz/https://raw.githubusercontent.com/qist/tvbox/refs/heads/master/jsm.json",
-    "level": "A"
-  },
-  {
     "name": "荐片",
     "url": "https://tv.203511.xyz/0821.json",
-    "level": "A"
-  },
-  {
-    "name": "11",
-    "url": "https://cdn.jsdelivr.net/gh/liu673cn/box@main/m.json",
     "level": "A"
   },
   {
@@ -20,8 +10,13 @@
     "level": "A"
   },
   {
-    "name": "拾光",
-    "url": "https://gh-proxy.com/https://raw.githubusercontent.com/xmbjm/svip/refs/heads/main/svip.json",
+    "name": "神秘大佬",
+    "url": "https://g.33445500.xyz/https://raw.githubusercontent.com/qist/tvbox/refs/heads/master/jsm.json",
+    "level": "A"
+  },
+  {
+    "name": "小苹果线路",
+    "url": "https://bitbucket.org/xduo/duoapi/raw/master/xpg.json",
     "level": "A"
   },
   {
@@ -30,8 +25,13 @@
     "level": "A"
   },
   {
-    "name": "小苹果线路",
-    "url": "https://bitbucket.org/xduo/duoapi/raw/master/xpg.json",
+    "name": "11",
+    "url": "https://cdn.jsdelivr.net/gh/liu673cn/box@main/m.json",
+    "level": "A"
+  },
+  {
+    "name": "拾光",
+    "url": "https://gh-proxy.com/https://raw.githubusercontent.com/xmbjm/svip/refs/heads/main/svip.json",
     "level": "A"
   },
   {
@@ -41,12 +41,12 @@
   },
   {
     "name": "潇洒",
-    "url": "https://g.33445500.xyz/https://raw.githubusercontent.com/qist/tvbox/refs/heads/master/xiaosa/api.json",
+    "url": "https://qist.wyfc.qzz.io/xiaosa/api.json",
     "level": "B"
   },
   {
     "name": "潇洒",
-    "url": "https://qist.wyfc.qzz.io/xiaosa/api.json",
+    "url": "https://g.33445500.xyz/https://raw.githubusercontent.com/qist/tvbox/refs/heads/master/xiaosa/api.json",
     "level": "B"
   },
   {
@@ -70,13 +70,18 @@
     "level": "B"
   },
   {
+    "name": "fmys",
+    "url": "http://fmys.top/fmys.json",
+    "level": "B"
+  },
+  {
     "name": "俊哥接口",
     "url": "http://home.jundie.top:81/top98.json",
     "level": "B"
   },
   {
-    "name": "fmys",
-    "url": "http://fmys.top/fmys.json",
+    "name": "宝盒接口",
+    "url": "http://宝盒接口.top",
     "level": "B"
   },
   {
@@ -95,11 +100,6 @@
     "level": "B"
   },
   {
-    "name": "宝盒接口",
-    "url": "http://宝盒接口.top",
-    "level": "B"
-  },
-  {
     "name": "Kevin-IPTV",
     "url": "https://iptv-kevin.pages.dev/tvbox/tvbox.json",
     "level": "C"
@@ -110,13 +110,13 @@
     "level": "C"
   },
   {
-    "name": "牛二",
-    "url": "https://9280.kstore.space/newwex.json",
+    "name": "王二小",
+    "url": "https://9280.kstore.vip/newwex.json",
     "level": "C"
   },
   {
-    "name": "王二小",
-    "url": "https://9280.kstore.vip/newwex.json",
+    "name": "牛二",
+    "url": "https://9280.kstore.space/newwex.json",
     "level": "C"
   },
   {
