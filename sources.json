@@ -5,8 +5,8 @@
     "level": "A"
   },
   {
-    "name": "荐片",
-    "url": "https://tv.203511.xyz/0821.json",
+    "name": "拾光",
+    "url": "https://gh-proxy.com/https://raw.githubusercontent.com/xmbjm/svip/refs/heads/main/svip.json",
     "level": "A"
   },
   {
@@ -20,18 +20,18 @@
     "level": "A"
   },
   {
+    "name": "小盒子4K",
+    "url": "http://xhztv.top/4k.json",
+    "level": "A"
+  },
+  {
     "name": "小苹果线路",
     "url": "https://bitbucket.org/xduo/duoapi/raw/master/xpg.json",
     "level": "A"
   },
   {
-    "name": "拾光",
-    "url": "https://gh-proxy.com/https://raw.githubusercontent.com/xmbjm/svip/refs/heads/main/svip.json",
-    "level": "A"
-  },
-  {
-    "name": "小盒子4K",
-    "url": "http://xhztv.top/4k.json",
+    "name": "荐片",
+    "url": "https://tv.203511.xyz/0821.json",
     "level": "A"
   },
   {
@@ -75,11 +75,6 @@
     "level": "B"
   },
   {
-    "name": "xn--6orr3pi6g9uu",
-    "url": "http://xn--6orr3pi6g9uu.top/",
-    "level": "B"
-  },
-  {
     "name": "俊哥接口",
     "url": "http://home.jundie.top:81/top98.json",
     "level": "B"
@@ -92,6 +87,11 @@
   {
     "name": "1",
     "url": "https://700sjro44343.vicp.fun/vip/vip/tv.json",
+    "level": "B"
+  },
+  {
+    "name": "xn--6orr3pi6g9uu",
+    "url": "http://xn--6orr3pi6g9uu.top/",
     "level": "B"
   },
   {
@@ -110,13 +110,13 @@
     "level": "C"
   },
   {
-    "name": "王二小",
-    "url": "https://9280.kstore.vip/newwex.json",
+    "name": "牛儿",
+    "url": "https://9280.kstore.space/wex.json",
     "level": "C"
   },
   {
-    "name": "牛儿",
-    "url": "https://9280.kstore.space/wex.json",
+    "name": "王二小",
+    "url": "https://9280.kstore.vip/newwex.json",
     "level": "C"
   },
   {
