@@ -5,13 +5,8 @@
     "level": "A"
   },
   {
-    "name": "ok",
-    "url": "https://raw.liucn.cc/box/m.json",
-    "level": "A"
-  },
-  {
-    "name": "神秘大佬",
-    "url": "https://g.33445500.xyz/https://raw.githubusercontent.com/qist/tvbox/refs/heads/master/jsm.json",
+    "name": "荐片",
+    "url": "https://tv.203511.xyz/0821.json",
     "level": "A"
   },
   {
@@ -20,8 +15,13 @@
     "level": "A"
   },
   {
-    "name": "荐片",
-    "url": "https://tv.203511.xyz/0821.json",
+    "name": "神秘大佬",
+    "url": "https://g.33445500.xyz/https://raw.githubusercontent.com/qist/tvbox/refs/heads/master/jsm.json",
+    "level": "A"
+  },
+  {
+    "name": "ok",
+    "url": "https://raw.liucn.cc/box/m.json",
     "level": "A"
   },
   {
@@ -45,23 +45,13 @@
     "level": "B"
   },
   {
-    "name": "饭太硬",
-    "url": "https://qist.wyfc.qzz.io/fty.json",
-    "level": "B"
-  },
-  {
     "name": "潇洒",
     "url": "https://g.33445500.xyz/https://raw.githubusercontent.com/qist/tvbox/refs/heads/master/xiaosa/api.json",
     "level": "B"
   },
   {
-    "name": "软件",
-    "url": "http://47.96.82.41:5188/api.json",
-    "level": "B"
-  },
-  {
-    "name": "摸鱼儿",
-    "url": "https://6800.kstore.vip/fish.json",
+    "name": "饭太硬",
+    "url": "https://qist.wyfc.qzz.io/fty.json",
     "level": "B"
   },
   {
@@ -70,13 +60,13 @@
     "level": "B"
   },
   {
-    "name": "fmys",
-    "url": "http://fmys.top/fmys.json",
+    "name": "摸鱼儿",
+    "url": "https://6800.kstore.vip/fish.json",
     "level": "B"
   },
   {
-    "name": "xn--6orr3pi6g9uu",
-    "url": "http://xn--6orr3pi6g9uu.top/",
+    "name": "软件",
+    "url": "http://47.96.82.41:5188/api.json",
     "level": "B"
   },
   {
@@ -85,8 +75,13 @@
     "level": "B"
   },
   {
-    "name": "宝盒接口",
-    "url": "http://宝盒接口.top",
+    "name": "fmys",
+    "url": "http://fmys.top/fmys.json",
+    "level": "B"
+  },
+  {
+    "name": "二月红接口",
+    "url": "https://700sjro44343.vicp.fun/eggp/0211/tv.json",
     "level": "B"
   },
   {
@@ -95,8 +90,13 @@
     "level": "B"
   },
   {
-    "name": "二月红接口",
-    "url": "https://700sjro44343.vicp.fun/eggp/0211/tv.json",
+    "name": "xn--6orr3pi6g9uu",
+    "url": "http://xn--6orr3pi6g9uu.top/",
+    "level": "B"
+  },
+  {
+    "name": "宝盒接口",
+    "url": "http://宝盒接口.top",
     "level": "B"
   },
   {
@@ -110,13 +110,13 @@
     "level": "C"
   },
   {
-    "name": "牛二",
-    "url": "https://9280.kstore.space/newwex.json",
+    "name": "王二小",
+    "url": "https://9280.kstore.vip/newwex.json",
     "level": "C"
   },
   {
-    "name": "王二小",
-    "url": "https://9280.kstore.vip/newwex.json",
+    "name": "牛二",
+    "url": "https://9280.kstore.space/newwex.json",
     "level": "C"
   },
   {
