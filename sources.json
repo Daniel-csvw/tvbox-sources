@@ -10,11 +10,6 @@
     "level": "A"
   },
   {
-    "name": "11",
-    "url": "https://cdn.jsdelivr.net/gh/liu673cn/box@main/m.json",
-    "level": "A"
-  },
-  {
     "name": "神秘大佬",
     "url": "https://g.33445500.xyz/https://raw.githubusercontent.com/qist/tvbox/refs/heads/master/jsm.json",
     "level": "A"
@@ -22,6 +17,11 @@
   {
     "name": "小盒子4K",
     "url": "http://xhztv.top/4k.json",
+    "level": "A"
+  },
+  {
+    "name": "11",
+    "url": "https://cdn.jsdelivr.net/gh/liu673cn/box@main/m.json",
     "level": "A"
   },
   {
@@ -50,16 +50,6 @@
     "level": "B"
   },
   {
-    "name": "天天",
-    "url": "http://tv.nxog.top/",
-    "level": "B"
-  },
-  {
-    "name": "cs",
-    "url": "http://tv.nxog.top/m/",
-    "level": "B"
-  },
-  {
     "name": "软件",
     "url": "http://47.96.82.41:5188/api.json",
     "level": "B"
@@ -70,13 +60,23 @@
     "level": "B"
   },
   {
+    "name": "wwtest",
+    "url": "https://jinenge.us.kg/app/tvbox/tvbox.json",
+    "level": "B"
+  },
+  {
     "name": "俊哥接口",
     "url": "http://home.jundie.top:81/top98.json",
     "level": "B"
   },
   {
-    "name": "wwtest",
-    "url": "https://jinenge.us.kg/app/tvbox/tvbox.json",
+    "name": "1",
+    "url": "https://700sjro44343.vicp.fun/vip/vip/tv.json",
+    "level": "B"
+  },
+  {
+    "name": "xn--6orr3pi6g9uu",
+    "url": "http://xn--6orr3pi6g9uu.top/",
     "level": "B"
   },
   {
@@ -87,16 +87,6 @@
   {
     "name": "二月红接口",
     "url": "https://700sjro44343.vicp.fun/eggp/0211/tv.json",
-    "level": "B"
-  },
-  {
-    "name": "xn--6orr3pi6g9uu",
-    "url": "http://xn--6orr3pi6g9uu.top/",
-    "level": "B"
-  },
-  {
-    "name": "1",
-    "url": "https://700sjro44343.vicp.fun/vip/vip/tv.json",
     "level": "B"
   },
   {
