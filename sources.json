@@ -1,10 +1,5 @@
 [
   {
-    "name": "荐片_0821",
-    "url": "https://tv.203511.xyz/0821.json",
-    "level": "A"
-  },
-  {
     "name": "神秘大佬_jsm",
     "url": "https://g.33445500.xyz/https://raw.githubusercontent.com/qist/tvbox/refs/heads/master/jsm.json",
     "level": "A"
@@ -15,13 +10,18 @@
     "level": "A"
   },
   {
-    "name": "小盒子4K",
-    "url": "http://xhztv.top/4k.json",
+    "name": "荐片_0821",
+    "url": "https://tv.203511.xyz/0821.json",
     "level": "A"
   },
   {
     "name": "ok_liucn",
     "url": "https://raw.liucn.cc/box/m.json",
+    "level": "A"
+  },
+  {
+    "name": "小盒子4K",
+    "url": "http://xhztv.top/4k.json",
     "level": "A"
   },
   {
@@ -40,13 +40,13 @@
     "level": "B"
   },
   {
-    "name": "潇洒_g334",
-    "url": "https://g.33445500.xyz/https://raw.githubusercontent.com/qist/tvbox/refs/heads/master/xiaosa/api.json",
+    "name": "潇洒_qist",
+    "url": "https://qist.wyfc.qzz.io/xiaosa/api.json",
     "level": "B"
   },
   {
-    "name": "潇洒_qist",
-    "url": "https://qist.wyfc.qzz.io/xiaosa/api.json",
+    "name": "潇洒_g334",
+    "url": "https://g.33445500.xyz/https://raw.githubusercontent.com/qist/tvbox/refs/heads/master/xiaosa/api.json",
     "level": "B"
   },
   {
@@ -60,8 +60,8 @@
     "level": "B"
   },
   {
-    "name": "二月红_0211",
-    "url": "https://700sjro44343.vicp.fun/eggp/0211/tv.json",
+    "name": "俊哥_jundie",
+    "url": "http://home.jundie.top:81/top98.json",
     "level": "B"
   },
   {
@@ -70,13 +70,8 @@
     "level": "B"
   },
   {
-    "name": "俊哥_jundie",
-    "url": "http://home.jundie.top:81/top98.json",
-    "level": "B"
-  },
-  {
-    "name": "xn6",
-    "url": "http://xn--6orr3pi6g9uu.top/",
+    "name": "二月红_0211",
+    "url": "https://700sjro44343.vicp.fun/eggp/0211/tv.json",
     "level": "B"
   },
   {
@@ -85,13 +80,13 @@
     "level": "C"
   },
   {
-    "name": "牛二",
-    "url": "https://9280.kstore.space/newwex.json",
+    "name": "牛儿",
+    "url": "https://9280.kstore.space/wex.json",
     "level": "C"
   },
   {
-    "name": "牛儿",
-    "url": "https://9280.kstore.space/wex.json",
+    "name": "牛二",
+    "url": "https://9280.kstore.space/newwex.json",
     "level": "C"
   }
 ]
