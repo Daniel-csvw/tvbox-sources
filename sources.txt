@@ -9,11 +9,11 @@ https://qist.wyfc.qzz.io/fty.json
 https://g.33445500.xyz/https://raw.githubusercontent.com/qist/tvbox/refs/heads/master/xiaosa/api.json
 https://qist.wyfc.qzz.io/xiaosa/api.json
 http://47.96.82.41:5188/api.json
-https://700sjro44343.vicp.fun/eggp/0211/tv.json
+http://124.223.214.31:8/api.json
+http://home.jundie.top:81/top98.json
 http://xn--6orr3pi6g9uu.top/
 https://700sjro44343.vicp.fun/vip/vip/tv.json
-http://home.jundie.top:81/top98.json
-http://124.223.214.31:8/api.json
+https://700sjro44343.vicp.fun/eggp/0211/tv.json
 https://9280.kstore.space/newwex.json
 https://9280.kstore.space/wex.json
 https://9280.kstore.vip/newwex.json
