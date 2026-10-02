@@ -10,13 +10,13 @@
     "level": "A"
   },
   {
-    "name": "ok_liucn",
-    "url": "https://raw.liucn.cc/box/m.json",
+    "name": "拾光_svip",
+    "url": "https://gh-proxy.com/https://raw.githubusercontent.com/xmbjm/svip/refs/heads/main/svip.json",
     "level": "A"
   },
   {
-    "name": "拾光_svip",
-    "url": "https://gh-proxy.com/https://raw.githubusercontent.com/xmbjm/svip/refs/heads/main/svip.json",
+    "name": "小盒子4K",
+    "url": "http://xhztv.top/4k.json",
     "level": "A"
   },
   {
@@ -25,8 +25,8 @@
     "level": "A"
   },
   {
-    "name": "小盒子4K",
-    "url": "http://xhztv.top/4k.json",
+    "name": "ok_liucn",
+    "url": "https://raw.liucn.cc/box/m.json",
     "level": "A"
   },
   {
@@ -50,13 +50,13 @@
     "level": "B"
   },
   {
-    "name": "软件_47",
-    "url": "http://47.96.82.41:5188/api.json",
+    "name": "my_124",
+    "url": "http://124.223.214.31:8/api.json",
     "level": "B"
   },
   {
-    "name": "my_124",
-    "url": "http://124.223.214.31:8/api.json",
+    "name": "软件_47",
+    "url": "http://47.96.82.41:5188/api.json",
     "level": "B"
   },
   {
@@ -70,13 +70,13 @@
     "level": "B"
   },
   {
-    "name": "1_vip",
-    "url": "https://700sjro44343.vicp.fun/vip/vip/tv.json",
+    "name": "二月红_0211",
+    "url": "https://700sjro44343.vicp.fun/eggp/0211/tv.json",
     "level": "B"
   },
   {
-    "name": "二月红_0211",
-    "url": "https://700sjro44343.vicp.fun/eggp/0211/tv.json",
+    "name": "1_vip",
+    "url": "https://700sjro44343.vicp.fun/vip/vip/tv.json",
     "level": "B"
   },
   {
@@ -85,13 +85,13 @@
     "level": "C"
   },
   {
-    "name": "牛儿",
-    "url": "https://9280.kstore.space/wex.json",
+    "name": "王二小",
+    "url": "https://9280.kstore.vip/newwex.json",
     "level": "C"
   },
   {
-    "name": "王二小",
-    "url": "https://9280.kstore.vip/newwex.json",
+    "name": "牛儿",
+    "url": "https://9280.kstore.space/wex.json",
     "level": "C"
   }
 ]
