@@ -5,11 +5,6 @@
     "level": "A"
   },
   {
-    "name": "ok_liucn",
-    "url": "https://raw.liucn.cc/box/m.json",
-    "level": "A"
-  },
-  {
     "name": "荐片_0821",
     "url": "https://tv.203511.xyz/0821.json",
     "level": "A"
@@ -30,6 +25,11 @@
     "level": "A"
   },
   {
+    "name": "ok_liucn",
+    "url": "https://raw.liucn.cc/box/m.json",
+    "level": "A"
+  },
+  {
     "name": "金鹰_550",
     "url": "http://550.3vcn.work/wdjyys.json",
     "level": "A"
@@ -40,13 +40,13 @@
     "level": "B"
   },
   {
-    "name": "潇洒_qist",
-    "url": "https://qist.wyfc.qzz.io/xiaosa/api.json",
+    "name": "潇洒_g334",
+    "url": "https://g.33445500.xyz/https://raw.githubusercontent.com/qist/tvbox/refs/heads/master/xiaosa/api.json",
     "level": "B"
   },
   {
-    "name": "潇洒_g334",
-    "url": "https://g.33445500.xyz/https://raw.githubusercontent.com/qist/tvbox/refs/heads/master/xiaosa/api.json",
+    "name": "潇洒_qist",
+    "url": "https://qist.wyfc.qzz.io/xiaosa/api.json",
     "level": "B"
   },
   {
@@ -65,18 +65,13 @@
     "level": "B"
   },
   {
-    "name": "xn6",
-    "url": "http://xn--6orr3pi6g9uu.top/",
+    "name": "二月红_0211",
+    "url": "https://700sjro44343.vicp.fun/eggp/0211/tv.json",
     "level": "B"
   },
   {
     "name": "1_vip",
     "url": "https://700sjro44343.vicp.fun/vip/vip/tv.json",
-    "level": "B"
-  },
-  {
-    "name": "二月红_0211",
-    "url": "https://700sjro44343.vicp.fun/eggp/0211/tv.json",
     "level": "B"
   },
   {
