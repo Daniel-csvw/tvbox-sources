@@ -5,18 +5,8 @@
     "level": "A"
   },
   {
-    "name": "神秘大佬_jsm",
-    "url": "https://g.33445500.xyz/https://raw.githubusercontent.com/qist/tvbox/refs/heads/master/jsm.json",
-    "level": "A"
-  },
-  {
     "name": "荐片_0821",
     "url": "https://tv.203511.xyz/0821.json",
-    "level": "A"
-  },
-  {
-    "name": "拾光_svip",
-    "url": "https://gh-proxy.com/https://raw.githubusercontent.com/xmbjm/svip/refs/heads/main/svip.json",
     "level": "A"
   },
   {
@@ -25,13 +15,18 @@
     "level": "A"
   },
   {
+    "name": "拾光_svip",
+    "url": "https://gh-proxy.com/https://raw.githubusercontent.com/xmbjm/svip/refs/heads/main/svip.json",
+    "level": "A"
+  },
+  {
     "name": "小盒子4K",
     "url": "http://xhztv.top/4k.json",
     "level": "A"
   },
   {
-    "name": "金鹰_550",
-    "url": "http://550.3vcn.work/wdjyys.json",
+    "name": "神秘大佬_jsm",
+    "url": "https://g.33445500.xyz/https://raw.githubusercontent.com/qist/tvbox/refs/heads/master/jsm.json",
     "level": "A"
   },
   {
@@ -50,11 +45,6 @@
     "level": "B"
   },
   {
-    "name": "my_124",
-    "url": "http://124.223.214.31:8/api.json",
-    "level": "B"
-  },
-  {
     "name": "软件_47",
     "url": "http://47.96.82.41:5188/api.json",
     "level": "B"
@@ -70,19 +60,19 @@
     "level": "B"
   },
   {
-    "name": "二月红_0211",
-    "url": "https://700sjro44343.vicp.fun/eggp/0211/tv.json",
-    "level": "B"
-  },
-  {
     "name": "1_vip",
     "url": "https://700sjro44343.vicp.fun/vip/vip/tv.json",
     "level": "B"
   },
   {
-    "name": "牛二",
-    "url": "https://9280.kstore.space/newwex.json",
-    "level": "C"
+    "name": "my_124",
+    "url": "http://124.223.214.31:8/api.json",
+    "level": "B"
+  },
+  {
+    "name": "二月红_0211",
+    "url": "https://700sjro44343.vicp.fun/eggp/0211/tv.json",
+    "level": "B"
   },
   {
     "name": "牛儿",
@@ -92,6 +82,11 @@
   {
     "name": "王二小",
     "url": "https://9280.kstore.vip/newwex.json",
+    "level": "C"
+  },
+  {
+    "name": "牛二",
+    "url": "https://9280.kstore.space/newwex.json",
     "level": "C"
   }
 ]
