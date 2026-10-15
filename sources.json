@@ -10,23 +10,23 @@
     "level": "A"
   },
   {
-    "name": "神秘大佬_jsm",
-    "url": "https://g.33445500.xyz/https://raw.githubusercontent.com/qist/tvbox/refs/heads/master/jsm.json",
-    "level": "A"
-  },
-  {
     "name": "拾光_svip",
     "url": "https://gh-proxy.com/https://raw.githubusercontent.com/xmbjm/svip/refs/heads/main/svip.json",
     "level": "A"
   },
   {
-    "name": "小盒子4K",
-    "url": "http://xhztv.top/4k.json",
+    "name": "神秘大佬_jsm",
+    "url": "https://g.33445500.xyz/https://raw.githubusercontent.com/qist/tvbox/refs/heads/master/jsm.json",
     "level": "A"
   },
   {
     "name": "ok_liucn",
     "url": "https://raw.liucn.cc/box/m.json",
+    "level": "A"
+  },
+  {
+    "name": "小盒子4K",
+    "url": "http://xhztv.top/4k.json",
     "level": "A"
   },
   {
@@ -50,13 +50,13 @@
     "level": "B"
   },
   {
-    "name": "my_124",
-    "url": "http://124.223.214.31:8/api.json",
+    "name": "软件_47",
+    "url": "http://47.96.82.41:5188/api.json",
     "level": "B"
   },
   {
-    "name": "软件_47",
-    "url": "http://47.96.82.41:5188/api.json",
+    "name": "my_124",
+    "url": "http://124.223.214.31:8/api.json",
     "level": "B"
   },
   {
@@ -80,11 +80,6 @@
     "level": "B"
   },
   {
-    "name": "王二小",
-    "url": "https://9280.kstore.vip/newwex.json",
-    "level": "C"
-  },
-  {
     "name": "牛二",
     "url": "https://9280.kstore.space/newwex.json",
     "level": "C"
@@ -92,6 +87,11 @@
   {
     "name": "牛儿",
     "url": "https://9280.kstore.space/wex.json",
+    "level": "C"
+  },
+  {
+    "name": "王二小",
+    "url": "https://9280.kstore.vip/newwex.json",
     "level": "C"
   }
 ]
