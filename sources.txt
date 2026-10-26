@@ -1,9 +1,9 @@
+https://cdn.jsdelivr.net/gh/liu673cn/box@main/m.json
+https://tv.203511.xyz/0821.json
 http://xhztv.top/4k.json
+https://gh-proxy.com/https://raw.githubusercontent.com/xmbjm/svip/refs/heads/main/svip.json
 https://g.33445500.xyz/https://raw.githubusercontent.com/qist/tvbox/refs/heads/master/jsm.json
 https://raw.liucn.cc/box/m.json
-https://tv.203511.xyz/0821.json
-https://gh-proxy.com/https://raw.githubusercontent.com/xmbjm/svip/refs/heads/main/svip.json
-https://cdn.jsdelivr.net/gh/liu673cn/box@main/m.json
 http://xn--6orr3pi6g9uu.top/
 http://550.3vcn.work/wdjyys.json
 https://g.33445500.xyz/https://raw.githubusercontent.com/qist/tvbox/refs/heads/master/xiaosa/api.json
@@ -15,6 +15,6 @@ http://47.96.82.41:5188/api.json
 http://home.jundie.top:81/top98.json
 https://700sjro44343.vicp.fun/eggp/0211/tv.json
 https://700sjro44343.vicp.fun/vip/vip/tv.json
-https://9280.kstore.space/newwex.json
 https://9280.kstore.vip/newwex.json
+https://9280.kstore.space/newwex.json
 https://9280.kstore.space/wex.json
