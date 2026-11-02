@@ -5,18 +5,13 @@
     "level": "A"
   },
   {
+    "name": "小盒子4K",
+    "url": "http://xhztv.top/4k.json",
+    "level": "A"
+  },
+  {
     "name": "神秘大佬_jsm",
     "url": "https://g.33445500.xyz/https://raw.githubusercontent.com/qist/tvbox/refs/heads/master/jsm.json",
-    "level": "A"
-  },
-  {
-    "name": "ok_liucn",
-    "url": "https://raw.liucn.cc/box/m.json",
-    "level": "A"
-  },
-  {
-    "name": "拾光_svip",
-    "url": "https://gh-proxy.com/https://raw.githubusercontent.com/xmbjm/svip/refs/heads/main/svip.json",
     "level": "A"
   },
   {
@@ -25,8 +20,8 @@
     "level": "A"
   },
   {
-    "name": "小盒子4K",
-    "url": "http://xhztv.top/4k.json",
+    "name": "潇洒_qist",
+    "url": "https://qist.wyfc.qzz.io/xiaosa/api.json",
     "level": "A"
   },
   {
@@ -35,8 +30,13 @@
     "level": "A"
   },
   {
-    "name": "潇洒_qist",
-    "url": "https://qist.wyfc.qzz.io/xiaosa/api.json",
+    "name": "拾光_svip",
+    "url": "https://gh-proxy.com/https://raw.githubusercontent.com/xmbjm/svip/refs/heads/main/svip.json",
+    "level": "A"
+  },
+  {
+    "name": "ok_liucn",
+    "url": "https://raw.liucn.cc/box/m.json",
     "level": "A"
   },
   {
@@ -85,13 +85,13 @@
     "level": "B"
   },
   {
-    "name": "王二小",
-    "url": "https://9280.kstore.vip/newwex.json",
+    "name": "牛二",
+    "url": "https://9280.kstore.space/newwex.json",
     "level": "C"
   },
   {
-    "name": "牛二",
-    "url": "https://9280.kstore.space/newwex.json",
+    "name": "王二小",
+    "url": "https://9280.kstore.vip/newwex.json",
     "level": "C"
   },
   {
