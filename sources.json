@@ -1,5 +1,15 @@
 [
   {
+    "name": "荐片_0821",
+    "url": "https://tv.203511.xyz/0821.json",
+    "level": "A"
+  },
+  {
+    "name": "ok_liucn",
+    "url": "https://raw.liucn.cc/box/m.json",
+    "level": "A"
+  },
+  {
     "name": "11_liu673cn",
     "url": "https://cdn.jsdelivr.net/gh/liu673cn/box@main/m.json",
     "level": "A"
@@ -10,43 +20,23 @@
     "level": "A"
   },
   {
-    "name": "神秘大佬_jsm",
-    "url": "https://g.33445500.xyz/https://raw.githubusercontent.com/qist/tvbox/refs/heads/master/jsm.json",
-    "level": "A"
-  },
-  {
-    "name": "荐片_0821",
-    "url": "https://tv.203511.xyz/0821.json",
-    "level": "A"
-  },
-  {
-    "name": "潇洒_qist",
-    "url": "https://qist.wyfc.qzz.io/xiaosa/api.json",
-    "level": "A"
-  },
-  {
-    "name": "潇洒_g334",
-    "url": "https://g.33445500.xyz/https://raw.githubusercontent.com/qist/tvbox/refs/heads/master/xiaosa/api.json",
-    "level": "A"
-  },
-  {
     "name": "拾光_svip",
     "url": "https://gh-proxy.com/https://raw.githubusercontent.com/xmbjm/svip/refs/heads/main/svip.json",
     "level": "A"
   },
   {
-    "name": "ok_liucn",
-    "url": "https://raw.liucn.cc/box/m.json",
-    "level": "A"
-  },
-  {
-    "name": "金鹰_550",
-    "url": "http://550.3vcn.work/wdjyys.json",
+    "name": "神秘大佬_jsm",
+    "url": "https://g.33445500.xyz/https://raw.githubusercontent.com/qist/tvbox/refs/heads/master/jsm.json",
     "level": "A"
   },
   {
     "name": "1_vip",
     "url": "https://700sjro44343.vicp.fun/vip/vip/tv.json",
+    "level": "A"
+  },
+  {
+    "name": "金鹰_550",
+    "url": "http://550.3vcn.work/wdjyys.json",
     "level": "A"
   },
   {
@@ -60,13 +50,18 @@
     "level": "B"
   },
   {
-    "name": "摸鱼儿_fish",
-    "url": "https://6800.kstore.vip/fish.json",
+    "name": "潇洒_g334",
+    "url": "https://g.33445500.xyz/https://raw.githubusercontent.com/qist/tvbox/refs/heads/master/xiaosa/api.json",
     "level": "B"
   },
   {
-    "name": "my_124",
-    "url": "http://124.223.214.31:8/api.json",
+    "name": "潇洒_qist",
+    "url": "https://qist.wyfc.qzz.io/xiaosa/api.json",
+    "level": "B"
+  },
+  {
+    "name": "摸鱼儿_fish",
+    "url": "https://6800.kstore.vip/fish.json",
     "level": "B"
   },
   {
@@ -80,9 +75,19 @@
     "level": "B"
   },
   {
+    "name": "my_124",
+    "url": "http://124.223.214.31:8/api.json",
+    "level": "B"
+  },
+  {
     "name": "xn6",
     "url": "http://xn--6orr3pi6g9uu.top/",
     "level": "B"
+  },
+  {
+    "name": "牛儿",
+    "url": "https://9280.kstore.space/wex.json",
+    "level": "C"
   },
   {
     "name": "牛二",
@@ -92,11 +97,6 @@
   {
     "name": "王二小",
     "url": "https://9280.kstore.vip/newwex.json",
-    "level": "C"
-  },
-  {
-    "name": "牛儿",
-    "url": "https://9280.kstore.space/wex.json",
     "level": "C"
   }
 ]
